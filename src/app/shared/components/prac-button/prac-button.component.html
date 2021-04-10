@@ -1,1 +1,20 @@
-<p>prac-button works!</p>
+<!-- Template/ Outlet -->
+<ng-template #content>
+    <!-- Content between selector (button) -->
+    <ng-content></ng-content> 
+</ng-template>
+
+<div class="prac-button">
+    <button mat-button [ngClass]="{
+        'customClass': class == 'customClass'
+    }" [disabled]="disabled">
+    <!-- Bind (#) or Template -->
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+</div>
+
+<!-- ngTemplate -->
+
+<!-- Property Binding [Square Brackets] -->
+<!-- <button [disabled]="true"></button> -->
+<!--  -->

@@ -1,0 +1,22 @@
+@import '../../../../assets/styles/variable.scss';
+        .prac-button {
+            button {
+                color:white;
+                background-color: black;
+                &:hover:not([disabled]) {
+                    background-color: $hover-color;
+                }
+                &:disabled {
+                    background-color: $hover-color;
+                }
+                &.customClass {
+                    border: 1px dotted currentColor;
+                }    
+            }
+            
+            
+        }
+
+
+        // button :disabled = false
+        // :hover color change
