@@ -1,0 +1,18 @@
+.button__special {
+    button {
+        background-color: aqua;
+        color: black;
+        &:hover:not([disabled]) {
+            background-color: black;
+            color: white;
+        }
+        &:disabled {
+            background-color: black;
+            color: white;
+        }
+        &.customClass {
+            border:10px solid red;
+        }
+    }
+    
+}

@@ -25,4 +25,22 @@ export class Prac1Component implements OnInit {
     )
   }
 
+  cardClicked(event: any) {
+    console.log(event);
+    switch (event.event) {
+      case 'call':
+        // Call Me (Use Template Literal)
+        alert(`Call Me ${event.data}`);
+        break;
+
+      case 'send-message':
+        // Call Me (Use Template Literal)
+        alert(`Send Message ${event.data}`);
+        break;
+    
+      default:
+        break;
+    }
+  }
+
 }

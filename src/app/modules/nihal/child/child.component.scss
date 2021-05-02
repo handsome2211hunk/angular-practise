@@ -1,0 +1,33 @@
+.myCard {
+    padding: 16px 8px;
+    border: 1px solid #c4c1c1;
+    border-radius: 20px;
+    .myRow {
+        display: flex;
+        .myImgColumn {
+            width: 40%;
+            img {
+                border-radius: 50%;
+                width: 75%;
+            }
+        }
+        .myCardDetails {
+            width: 60%;
+            margin: auto;
+            .myCustomButton {
+                margin-left: 2em;
+            }
+            .myCardText {
+                white-space: nowrap;
+                width: 150px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+        }
+        
+        
+    }
+    
+    
+}

@@ -1,0 +1,22 @@
+<div class="myCard" >
+    <div class="myRow">
+        <div class="myImgColumn">
+            <img [src]="profilePic" class="card-img-top myProfilePic" alt="...">
+        </div>
+        <div class="myCardDetails cardDetails">
+            <div class="mycard-body">
+                <h5 class="mycard-title">{{name}}</h5>
+                <p class="myCardText">{{phoneNo}}</p>
+                <a class="btn btn-primary" (click)="actionEvent($event, 'call')">Call Me</a>
+                <a class="btn btn-primary myCustomButton" (click)="actionEvent($event, 'send-message')">Text Me</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Type here
+
+Create input parameter in this child component to accept image from parent 
+bind it to image <source>
+
+okk -->

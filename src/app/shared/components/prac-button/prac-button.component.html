@@ -1,1 +1,8 @@
-<p>prac-button works!</p>
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>
+<div class="button__special">
+    <button type="button" mat-button color="primary" [ngClass]="{
+        'customClass': class == 'customClass'
+    }" [disabled]="disabled" ><ng-container *ngTemplateOutlet="content"></ng-container></button>
+</div>

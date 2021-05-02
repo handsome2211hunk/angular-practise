@@ -10,6 +10,6 @@ export class CountryService {
   // GET
   getAllJobs(): Observable<any> {
     // Template Literals (JS >> ES6)
-    return this.httpClient.get(`https://restcountries.eu/rest/v2/all`);
+    return this.httpClient.get(`https://jsonplaceholder.typicode.com/users`);
   }
 }

@@ -1,4 +1,8 @@
-<p>prac1 works!</p>
-<ul *ngFor="let item of jobList">
-    <li>{{item.name}}</li>
-</ul>
+<div class="myContainer">
+    <div class="myRow">
+        <div class="myColumn " *ngFor="let item of jobList">
+            <child [name]="item.name" [phoneNo] = "item.phone" [profilePic] = "'https://st.depositphotos.com/1779253/5140/v/600/depositphotos_51405259-stock-illustration-male-avatar-profile-picture-use.jpg'"
+            (onBtnClick) = "cardClicked($event)"></child>
+        </div>
+    </div>
+</div>
